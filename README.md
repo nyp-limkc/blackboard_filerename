@@ -2,7 +2,7 @@
 
 This script allows you to rename downloaded assignments from Blackboard into slightly shorter and 'human-readable' format.
 
-By default, when you download all files, the name of each file is usually **Assignment Folder Name_Admin@mymail.nyp.edu.sg_attempt_date_FileName.FileExtension**. 
+By default, when you download all files, the name of each file is usually **Assignment Folder Name_Admin[at]mymail.nyp.edu.sg_attempt_date_FileName.FileExtension**. 
 
 The script will remove *Assignment Folder Name*, *@mymail.nyp.edu.sg_attempt* and replace the admin number with the student's name. 
 
@@ -41,11 +41,12 @@ The outcome of this script will rename all the individual assignments to look li
 1. Unzip the zip file into a folder, remove all the default **attempt_date.txt** files. For the purpose of this tutorial, let's call this folder the "Assignment" folder.
 1. Open "FileRename" folder in command prompt. Type the following command.
     ```
-    node . "name of student json file" "absolute path to assignment folder" "name of the assignment you set on BB + _" 
+    node . "name of student json file" "absolute path to assignment folder" "name of the assignment you set on BB" 
     ```
-    *Note: the last underscore is **VERY IMPORTANT***
 
-    For example, if your json file is called **m1Students.json**, your assignment folder is at **C:\users\abc\eg1234\Assignment1** and your assignment name is **Assignment1(M1)**, then the command you need to type is
+    For example, if your json file is called **m1Students.json**, your assignment folder is at **C:\users\abc\eg1234\Assignment1** and your assignment name on Blackboard is **Assignment1(M1)**, then the command you need to type is
     ```
-    node . m1Students.json "C:\users\abc\eg1234\Assignment1" "Assignment1(M1)_"
+    node . m1Students.json "C:\users\abc\eg1234\Assignment1" "Assignment1(M1)"
     ```
+1. "Debugging" steps in case you have errors renaming these.
+    * Your json file should be {"admin1:"name1", "admin2:"name2", .... etc}
