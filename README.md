@@ -31,7 +31,7 @@ The outcome of this script will rename all the individual assignments to look li
             ]
         }
         ```
-1. Copy and paste the contents from `{"Admin1":"Name1", "Admin2":"Name2",.....}` into a file *students.json* (for eg). Save this file in the "FileRename" folder.
+1. Copy and paste the contents from `{"Admin1":"Name1", "Admin2":"Name2",.....}` into a file *students.json* (for eg). Save this file in the "FileRename" folder. See the sample_students.json for the template file.
 1. Open *students.json* in any text editor. Remove special characters from student's name. For eg, / or '
 1. Repeat the above few steps for different module groups, probably just name the json file as some unique name. 
 
@@ -48,5 +48,4 @@ The outcome of this script will rename all the individual assignments to look li
     ```
     node . m1Students.json "C:\users\abc\eg1234\Assignment1" "Assignment1(M1)"
     ```
-1. "Debugging" steps in case you have errors renaming these.
-    * Your json file should be {"admin1:"name1", "admin2:"name2", .... etc}
+1. Check your JSON file in case the renaming didn't work.

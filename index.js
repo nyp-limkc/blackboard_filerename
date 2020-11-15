@@ -2,7 +2,7 @@ var fs = require('fs');
 let arguments = process.argv;
 let fileName = arguments[2]; 
 let path = arguments[3];
-let stringToReplace = arguments[4];
+let stringToReplace = arguments[4] + "_";
 let rawdata = fs.readFileSync(fileName);
 let students = JSON.parse(rawdata);
 
