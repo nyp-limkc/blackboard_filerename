@@ -11,8 +11,9 @@ The outcome of this script will rename all the individual assignments to look li
 # Preparation (only do once!)
 1. Click the green color "Code" button to download the zip version of this project. Unzip it. Let's call this folder "FileRename Folder" for the purpose of this tutorial.
 1. Download and install the current version of [Node.js](https://nodejs.org/en/)
-1. Save your student admin numbers and names in an excel file. It should look something like this.
+1. Save your student admin numbers and names in an excel file. It should look like the sample in sample_students.xlsx.
     ```
+           Col 1   Col 2   Col 3
     Row 1: Admin1  Admin2  Admin3
     Row 2: Name1   Name2   Name3
     ```
@@ -31,7 +32,7 @@ The outcome of this script will rename all the individual assignments to look li
             ]
         }
         ```
-1. Copy and paste the contents from `{"Admin1":"Name1", "Admin2":"Name2",.....}` into a file *students.json* (for eg). Save this file in the "FileRename" folder. See the sample_students.json for the template file.
+1. Copy and paste the contents from `{"Admin1":"Name1", "Admin2":"Name2",.....}` into a file *students.json* (for eg). Save this file in the "FileRename" folder. See the sample_students.json for the expected outcome.
 1. Open *students.json* in any text editor. Remove special characters from student's name. For eg, / or '
 1. Repeat the above few steps for different module groups, probably just name the json file as some unique name. 
 
